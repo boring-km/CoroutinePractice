@@ -16,9 +16,9 @@ import androidx.navigation.compose.composable
 import com.boringkm.coroutinepractice.Routes
 
 
-fun NavGraphBuilder.mainScreenComposable() {
-  composable(Routes.MAIN) {
-    MainScreen()
+fun NavGraphBuilder.chapter02ScreenComposable() {
+  composable(Routes.CHAPTER_02) {
+    Chapter02Screen()
   }
 }
 
@@ -26,7 +26,7 @@ val numberSequenceTextState =  mutableStateOf("0")
 val sequenceIterator = getSequenceBuilder().iterator()
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun MainScreen() {
+fun Chapter02Screen() {
   Scaffold {
     Column {
       Text(text = numberSequenceTextState.value)
