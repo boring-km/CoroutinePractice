@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import com.boringkm.coroutinepractice.screens.chapter02ScreenComposable
 import com.boringkm.coroutinepractice.screens.chapter03ScreenComposable
+import com.boringkm.coroutinepractice.screens.chapter04ScreenComposable
 import com.boringkm.coroutinepractice.ui.theme.CoroutinePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -15,9 +16,10 @@ class MainActivity : ComponentActivity() {
     setContent {
       val navigationController = rememberNavController()
       CoroutinePracticeTheme {
-        NavHost(navController = navigationController, startDestination = Routes.CHAPTER_03) {
+        NavHost(navController = navigationController, startDestination = Routes.CHAPTER_04) {
           chapter02ScreenComposable()
           chapter03ScreenComposable()
+          chapter04ScreenComposable()
         }
       }
     }
